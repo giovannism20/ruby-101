@@ -1,8 +1,11 @@
-# ? It's a code style convention.
-# Indicates that a method returns a boolean value.
 def palindrome?(word)
   word.downcase == word.reverse.downcase
 end
 
-# Test
+# palindrome?("racecar") should return true
+puts palindrome?("racecar")
+
+# palindrome?("wagon") should return false
+puts palindrome?("wagon")
+
 puts palindrome?("Stats")
